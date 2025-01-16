@@ -282,6 +282,26 @@ body.dark-mode {
     color: white;
 }
 
+
+button:hover {
+    color: #AAAE7F;
+    background-color: antiquewhite;
+}
+
+body.dark-mode button {
+    background-color: #121212;
+    color: #4caf50;
+    border: none;
+    
+}
+
+body.dark-mode button:hover {
+    background-color: #4caf50;
+    color: black;
+}
+
+
+
 .navigation-arrow {
     position: fixed;
     top: 70%;
