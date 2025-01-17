@@ -80,35 +80,34 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 });
 
 
-// Liste der Projektseiten in der gewünschten Reihenfolge
+// pfeile
 const projects = [
     'ecotopy.html',
     'woodentwist.html',
     'superchemnitz.html',
     'brochure.html',
     'acetoneplaster.html'
-    // Weitere Projekte hier hinzufügen
+    
 ];
 
-// Aktuelle Seite ermitteln
+
 const currentPage = window.location.pathname.split('/').pop();
 const currentIndex = projects.indexOf(currentPage);
 
-// Links und Rechts Pfeile
+
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-// Vorheriges Projekt
+
 if (currentIndex > 0) {
     leftArrow.href = projects[currentIndex - 1];
 } else {
-    leftArrow.style.display = 'none'; // Versteckt den Pfeil, wenn kein vorheriges Projekt existiert
+    leftArrow.style.display = 'none'; 
 }
 
-// Nächstes Projekt
 if (currentIndex < projects.length - 1) {
     rightArrow.href = projects[currentIndex + 1];
 } else {
-    rightArrow.style.display = 'none'; // Versteckt den Pfeil, wenn kein nächstes Projekt existiert
+    rightArrow.style.display = 'none'; 
 }
 
